@@ -200,9 +200,11 @@ let score = 0;
 let gameLoop;
 let gameSpeed = 180;
 
-// 图片资源
-let snakeImg = null;
-let foodImg = null;
+// 图片资源（已内置指定图片，打开直接显示）
+let snakeImg = new Image();
+snakeImg.src = "20240929_101808.jpg";
+let foodImg = new Image();
+foodImg.src = "20240928_121129.jpg";
 
 // ========== 图片上传 + 自动裁圆 ==========
 function processImage(file, callback){
